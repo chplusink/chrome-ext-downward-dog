@@ -1,5 +1,5 @@
 .BoardCard, .BoardColumnScrollableContainer-cardsList, .BoardBody-column {
-  transition: width 0.6s;
+  transition: width 0.6s !important;
 }
 
 .vl-asana-overrides .BoardBody-column {

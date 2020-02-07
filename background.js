@@ -4,7 +4,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 
 chrome.tabs.onUpdated.addListener(function() {
   chrome.webNavigation.onCompleted.addListener(function () {
-    const board = document.querySelector('.Board');
-    board.classList.toggle('vl-asana-overrides');
+    // const board = document.querySelector('.Board');
+    // board.classList.toggle('vl-asana-overrides');
   }, { url: [{ urlMatches: 'https://app.asana.com/*'}]});
 });
