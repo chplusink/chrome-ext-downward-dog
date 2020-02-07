@@ -1,0 +1,29 @@
+{
+  "name": "Downward Dog",
+  "description": "Resizes Asana's Board view for greater visibility",
+  "version": "0.1",
+  "manifest_version": 2,
+  "homepage_url": "https://github.com/chplusink",
+  "icons": {
+    "16": "icon-16.png",
+    "32": "icon-32.png"
+  },
+  "browser_action": {
+    "default_icon": "icon-32.png",
+    "default_title": "Asana Format"
+  },
+  "background": {"scripts": ["background.js"]},
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "webNavigation",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://app.asana.com/*"],
+      "css": ["asanaFormat.css"]
+    }
+  ]
+}

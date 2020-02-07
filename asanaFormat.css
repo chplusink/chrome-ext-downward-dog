@@ -1,0 +1,19 @@
+.BoardCard, .BoardColumnScrollableContainer-cardsList, .BoardBody-column {
+  transition: width 0.6s;
+}
+
+.vl-asana-overrides .BoardBody-column {
+  width: 200px;
+}
+
+.vl-asana-overrides .BoardColumnScrollableContainer-cardsList {
+  width: 180px;
+}
+
+.vl-asana-overrides .BoardCard {
+  width: 180px;
+}
+
+.vl-asana-overrides .BoardCard-rightMetadata {
+  width: auto;
+}
